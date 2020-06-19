@@ -1,0 +1,19 @@
+/system		    ext4	/dev/block/platform/soc/1d84000.ufshc/by-name/system
+/system_image	   emmc	        /dev/block/platform/soc/1d84000.ufshc/by-name/system
+/data		    ext4	/dev/block/platform/soc/1d84000.ufshc/by-name/userdata				
+/cache		    ext4	/dev/block/platform/soc/1d84000.ufshc/by-name/cache    	flags=backup=1;display="Preload"
+
+/boot		    emmc	/dev/block/platform/soc/1d84000.ufshc/by-name/boot
+/recovery	    emmc	/dev/block/platform/soc/1d84000.ufshc/by-name/recovery				
+
+/modem		emmc	/dev/block/platform/soc/1d84000.ufshc/by-name/modem	flags=backup=1;display="Baseband"
+/efs		ext4	/dev/block/platform/soc/1d84000.ufshc/by-name/efs	flags=backup=1;display="EFS"
+
+/misc		    emmc	/dev/block/platform/soc/1d84000.ufshc/by-name/misc
+/vendor		    ext4	/dev/block/platform/soc/1d84000.ufshc/by-name/vendor
+/vendor_image	   emmc	        /dev/block/platform/soc/1d84000.ufshc/by-name/vendor
+/product		ext4	/dev/block/platform/soc/1d84000.ufshc/by-name/product
+/product_image	emmc	/dev/block/platform/soc/1d84000.ufshc/by-name/product	flags=backup=1;display="Product Image";flashimg
+
+/external_sd	vfat	/dev/block/mmcblk0p1 /dev/block/mmcblk0	flags=display="Micro SDcard";storage;wipeingui;removable
+/usb-otg	             vfat	/dev/block/sde1 /dev/block/sde						flags=display="USB-OTG";storage;wipeingui;removable
